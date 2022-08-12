@@ -1,0 +1,34 @@
+/*-------------------------------
+            COLORS
+---------------------------------*/
+$clr-primary: green;
+$clr-accent: red;
+$clr-neutral: yellow;
+
+/*-------------------------------
+            TYPOGRAPHY
+---------------------------------*/
+$font-families: (
+  primary: (
+    "Montserrat",
+    sans-serif,
+  ),
+);
+$font-sizes: (
+  primary: 2rem,
+  neutral: 1rem,
+);
+$font-weights: (
+  primary: 700,
+  neutral: 500,
+);
+
+/*-------------------------------
+            BREAKPOINTS
+---------------------------------*/
+$breakpoints: (
+  phone: 375px,
+  tabletPortrait: 769px,
+  tabletLandscape: 1024px,
+  laptop: 1280px,
+);

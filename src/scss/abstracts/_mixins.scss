@@ -1,0 +1,21 @@
+@use "./variables" as var;
+
+@mixin mq($size) {
+  @media (min-width: map-get(var.$breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin flexRow($alignItems, $justContent) {
+  display: flex;
+  flex-direction: row;
+  align-items: $alignItems;
+  justify-content: $justContent;
+}
+
+@mixin flexCol($alignItems, $justContent) {
+  display: flex;
+  flex-direction: column;
+  align-items: $alignItems;
+  justify-content: $justContent;
+}
