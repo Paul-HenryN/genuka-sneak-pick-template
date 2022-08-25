@@ -135,7 +135,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 19px;
+  column-gap: 4vw;
   display: flex;
 }
 

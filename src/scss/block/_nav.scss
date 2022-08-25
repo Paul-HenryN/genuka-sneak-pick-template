@@ -54,6 +54,6 @@
 
   &__right {
     @include mix.flexRow(center, center);
-    column-gap: 19px;
+    column-gap: 4vw;
   }
 }
