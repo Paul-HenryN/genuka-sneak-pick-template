@@ -50,7 +50,7 @@ input, button, textarea, select {
 body {
   color: #000;
   background-color: #fefff5;
-  background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.0e33dc10.png");
+  background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.28527be0.png");
   font-family: Poppins, sans-serif;
   font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 300;
@@ -147,12 +147,15 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .btn:where(:link, :visited, :hover, :focus, :active) {
-  color: #000;
   font-size: 1rem;
   text-decoration: none;
 }
 
-.btn:where(:link, :visited, :hover, :focus, :active):after {
+.btn_link:where(:link, :visited, :hover, :focus, :active) {
+  color: #000;
+}
+
+.btn_link:where(:link, :visited, :hover, :focus, :active):after {
   content: "";
   width: 100%;
   height: 1.5px;
@@ -161,6 +164,37 @@ a:where(:link, :visited, :hover, :focus, :active) {
   transition: all .1s linear;
   display: block;
   transform: scaleX(0);
+}
+
+.btn_primary {
+  color: #5b2406;
+  border: 2px solid #5b2406;
+  border-radius: .625rem;
+  padding: .9em 1.5em;
+  font-family: Rubik, sans-serif;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn_primary:before {
+  z-index: -1;
+  content: "";
+  transform-origin: 0;
+  background-color: #fa7f3d;
+  transition: all .2s;
+  display: block;
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+}
+
+.btn_arrow:after {
+  content: url("arrow.4f3cd5aa.svg");
+  transform-origin: 0;
+  margin-left: .625rem;
+  transition: transform .3s;
+  display: inline-block;
 }
 
 body {
@@ -233,8 +267,12 @@ header {
   }
 }
 
-.btn:hover:after {
+.btn_link:hover:after, .btn_primary:hover:before {
   transform: scaleX(1);
 }
 
-/*# sourceMappingURL=index.b10d73a7.css.map */
+.btn_arrow:hover:after {
+  transform: scaleX(1.1)translateX(4px);
+}
+
+/*# sourceMappingURL=index.c82ef6e0.css.map */

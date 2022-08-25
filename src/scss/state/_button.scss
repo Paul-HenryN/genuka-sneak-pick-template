@@ -1,5 +1,13 @@
 .btn {
-  &:hover::after {
+  &_link:hover::after {
     transform: scaleX(1);
+  }
+
+  &_primary:hover::before {
+    transform: scaleX(1);
+  }
+
+  &_arrow:hover::after {
+    transform: scaleX(1.1) translateX(4px);
   }
 }
