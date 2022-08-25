@@ -5,8 +5,8 @@
   "main": "index.js",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --dist-dir docs --public-url ./",
-    "build": "parcel build"
+    "start": "parcel --dist-dir docs",
+    "build": "parcel build --public-url ./"
   },
   "keywords": [],
   "author": "",

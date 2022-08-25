@@ -1,0 +1,48 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/mixins" as mix;
+
+body {
+  @include mix.mq(tabletLandscape) {
+    text-align: start;
+  }
+}
+
+header {
+  @include mix.mq(tabletLandscape) {
+    padding-inline: 10%;
+  }
+}
+
+#intro {
+  @include mix.mq(tabletLandscape) {
+    flex-direction: row-reverse;
+    column-gap: 7%;
+    padding-inline: 10%;
+
+    $offset: 50px;
+
+    @at-root .intro__hero {
+      position: relative;
+      bottom: $offset;
+
+      flex: 2;
+    }
+    @at-root .intro__text {
+      position: relative;
+      top: $offset;
+
+      flex: 1;
+      align-items: flex-start;
+
+      p {
+        max-width: 100%;
+      }
+    }
+    @at-root .intro__sneaker {
+      width: clamp(rem(340), 150%, rem(870));
+    }
+    @at-root .intro__circle {
+      width: clamp(rem(245), 100%, rem(625));
+    }
+  }
+}

@@ -18,7 +18,7 @@ header {
 #intro {
   position: relative;
 
-  @include mix.flexCol(center, stretch);
+  @include mix.flexCol(center, space-between);
   row-gap: rem(50);
 
   @at-root .intro__hero {
@@ -27,21 +27,27 @@ header {
   }
 
   @at-root .intro__circle {
-    width: 70%;
+    width: clamp(rem(245), 70%, rem(625));
   }
 
   @at-root .intro__sneaker {
+    max-width: none;
     position: absolute;
-    top: 10%;
+    width: clamp(rem(340), 100%, rem(870));
   }
 
   @at-root .intro__text {
     @include mix.flexCol(center, center);
     row-gap: rem(19);
-    max-width: 70%;
+
+    h1,
+    p {
+      max-width: 70%;
+    }
   }
 
   @at-root .intro__cta {
+    margin-top: rem(20);
     @include mix.flexRow(center, center);
     column-gap: rem(30);
   }

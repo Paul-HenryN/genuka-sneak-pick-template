@@ -212,7 +212,7 @@ header {
 
 #intro {
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
   row-gap: 3.125rem;
   display: flex;
@@ -228,16 +228,16 @@ header {
 }
 
 .intro__circle {
-  width: 70%;
+  width: clamp(15.3125rem, 70%, 39.0625rem);
 }
 
 .intro__sneaker {
+  max-width: none;
+  width: clamp(21.25rem, 100%, 54.375rem);
   position: absolute;
-  top: 10%;
 }
 
 .intro__text {
-  max-width: 70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -245,11 +245,16 @@ header {
   display: flex;
 }
 
+.intro__text h1, .intro__text p {
+  max-width: 70%;
+}
+
 .intro__cta {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   column-gap: 1.875rem;
+  margin-top: 1.25rem;
   display: flex;
 }
 
@@ -273,6 +278,47 @@ header {
 
 .btn_arrow:hover:after {
   transform: scaleX(1.1)translateX(4px);
+}
+
+@media (min-width: 1024px) {
+  body {
+    text-align: start;
+  }
+
+  header {
+    padding-inline: 10%;
+  }
+
+  #intro {
+    flex-direction: row-reverse;
+    column-gap: 7%;
+    padding-inline: 10%;
+  }
+
+  .intro__hero {
+    flex: 2;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .intro__text {
+    flex: 1;
+    align-items: flex-start;
+    position: relative;
+    top: 50px;
+  }
+
+  .intro__text p {
+    max-width: 100%;
+  }
+
+  .intro__sneaker {
+    width: clamp(21.25rem, 150%, 54.375rem);
+  }
+
+  .intro__circle {
+    width: clamp(15.3125rem, 100%, 39.0625rem);
+  }
 }
 
 /*# sourceMappingURL=index.c82ef6e0.css.map */
