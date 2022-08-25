@@ -533,6 +533,6 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"4M6V8":[function(require,module,exports) {
 
-},{}]},["lX4BT","4M6V8"], "4M6V8", "parcelRequire3d6a")
+},{}]},["lX4BT","4M6V8"], "4M6V8", "parcelRequireda1b")
 
-//# sourceMappingURL=frontend-boilerplate.59712999.js.map
+//# sourceMappingURL=genuka-sneak-pick-template.59712999.js.map

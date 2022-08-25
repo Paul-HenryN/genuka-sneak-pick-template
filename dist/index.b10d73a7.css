@@ -47,4 +47,32 @@ input, button, textarea, select {
   }
 }
 
+body {
+  background-color: #fefff5;
+  background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.0e33dc10.png");
+  font-family: Poppins, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: Rubik, sans-serif;
+}
+
+h1 {
+  font-size: 6.25rem;
+  font-weight: 900;
+  line-height: .8;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=index.b10d73a7.css.map */

@@ -1,6 +1,7 @@
-# Base folder structure for SASS/SCSS Frontend projects
+# 👟 Sneak' Pick
 
-- [SMACSS](http://smacss.com/book/state) folder structure
-- [Andy Bell's css reset](https://piccalil.li/blog/a-modern-css-reset/)
-- [Parcel](https://parceljs.org/)
-- [Fontawesome](https://fontawesome.com/)
+A [Genuka](https://www.genuka.com/) sneaker store template.
+
+## Links
+
+✏️ [Figma design](https://www.figma.com/file/CAmboyypBQoc3VgcAXz7FA/sneak-pick?node-id=0%3A1)

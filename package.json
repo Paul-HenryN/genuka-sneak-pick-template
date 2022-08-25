@@ -1,7 +1,7 @@
 {
-  "name": "frontend-boilerplate",
+  "name": "genuka-sneak-pick-template",
   "version": "1.0.0",
-  "description": "- [SMACSS](http://smacss.com/book/state) folder structure\r - [Andy Bell's css reset](https://piccalil.li/blog/a-modern-css-reset/)\r - [Parcel](https://parceljs.org/)",
+  "description": "A [Genuka](https://www.genuka.com/) sneaker store template.",
   "main": "index.js",
   "source": "src/index.html",
   "scripts": {
