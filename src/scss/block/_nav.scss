@@ -56,8 +56,4 @@
     @include mix.flexRow(center, center);
     column-gap: 19px;
   }
-
-  &__link {
-    font-size: map-get($map: var.$font-sizes, $key: small);
-  }
 }

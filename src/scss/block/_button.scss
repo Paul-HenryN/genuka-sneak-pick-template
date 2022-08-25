@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as var;
+
+.btn:where(:link, :visited, :hover, :focus, :active) {
+  color: map-get($map: var.$colors, $key: neutral-dark);
+  text-decoration: none;
+  font-size: map-get($map: var.$colors, $key: small);
+}

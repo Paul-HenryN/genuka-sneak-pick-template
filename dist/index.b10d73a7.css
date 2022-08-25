@@ -76,11 +76,6 @@ h3 {
   font-weight: 700;
 }
 
-a:where(:link, :visited, :hover, :focus, :active) {
-  color: #000;
-  text-decoration: none;
-}
-
 .nav {
   flex-direction: row;
   justify-content: space-between;
@@ -140,8 +135,9 @@ a:where(:link, :visited, :hover, :focus, :active) {
   display: flex;
 }
 
-.nav__link {
-  font-size: 1rem;
+.btn:where(:link, :visited, :hover, :focus, :active) {
+  color: #000;
+  text-decoration: none;
 }
 
 header {
