@@ -1,0 +1,49 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.nav {
+  @include mix.flexRow(center, space-between);
+
+  &__logo {
+    width: 40%;
+    min-width: rem(90);
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__btn-cart {
+    position: relative;
+
+    &::after {
+      content: attr(data-count);
+
+      display: block;
+      width: 16px;
+      aspect-ratio: 1;
+
+      font-family: map-get($map: var.$font-families, $key: primary);
+      font-size: rem(10);
+      text-align: center;
+
+      background-color: map-get($map: var.$colors, $key: neutral-light);
+
+      color: map-get($map: var.$colors, $key: neutral-dark);
+      border: 1px solid map-get($map: var.$colors, $key: neutral-dark);
+      border-radius: 100%;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__right {
+    @include mix.flexRow(center, center);
+    column-gap: 19px;
+  }
+}

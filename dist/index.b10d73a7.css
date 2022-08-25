@@ -48,6 +48,7 @@ input, button, textarea, select {
 }
 
 body {
+  color: #000;
   background-color: #fefff5;
   background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.0e33dc10.png");
   font-family: Poppins, sans-serif;
@@ -73,6 +74,53 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav__logo {
+  width: 40%;
+  min-width: 5.625rem;
+}
+
+.nav__btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav__btn-cart {
+  position: relative;
+}
+
+.nav__btn-cart:after {
+  content: attr(data-count);
+  width: 16px;
+  aspect-ratio: 1;
+  text-align: center;
+  color: #000;
+  background-color: #fcfcfc;
+  border: 1px solid #000;
+  border-radius: 100%;
+  font-family: Rubik, sans-serif;
+  font-size: .625rem;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nav__right {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 19px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */
