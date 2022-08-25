@@ -76,6 +76,10 @@ h3 {
   font-weight: 700;
 }
 
+a:where(:link, :visited, :hover, :focus, :active) {
+  color: #000;
+}
+
 .nav {
   flex-direction: row;
   justify-content: space-between;
@@ -84,14 +88,25 @@ h3 {
 }
 
 .nav__logo {
-  width: 40%;
-  min-width: 5.625rem;
+  width: min(9.375rem, 20%);
+  min-width: 8.75rem;
+}
+
+.nav__menu {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .nav__btn {
   cursor: pointer;
   background: none;
   border: none;
+}
+
+.nav__btn-toggle {
+  display: none;
 }
 
 .nav__btn-cart {
