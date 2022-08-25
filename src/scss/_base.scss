@@ -26,6 +26,13 @@ h1 {
   font-size: map-get($map: var.$font-sizes, $key: h1);
   font-weight: map-get($map: var.$font-weights, $key: h1);
   line-height: 0.8;
+  text-transform: uppercase;
+  color: map-get($map: var.$colors, $key: accent);
+
+  &::first-line {
+    font-style: italic;
+    color: map-get($map: var.$colors, $key: neutral-dark);
+  }
 }
 h2 {
   font-size: map-get($map: var.$font-sizes, $key: h2);

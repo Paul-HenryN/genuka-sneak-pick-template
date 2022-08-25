@@ -1,4 +1,48 @@
-header {
+@use "./abstracts/functions" as *;
+@use "./abstracts/mixins" as mix;
+
+body {
+  text-align: center;
+}
+
+header,
+#intro {
   padding-inline: 8%;
+}
+
+header {
   padding-top: 40px;
+  margin-bottom: rem(80);
+}
+
+#intro {
+  position: relative;
+
+  @include mix.flexCol(center, stretch);
+  row-gap: rem(50);
+
+  @at-root .intro__hero {
+    position: relative;
+    @include mix.flexRow(center, center);
+  }
+
+  @at-root .intro__circle {
+    width: 70%;
+  }
+
+  @at-root .intro__sneaker {
+    position: absolute;
+    top: 10%;
+  }
+
+  @at-root .intro__text {
+    @include mix.flexCol(center, center);
+    row-gap: rem(19);
+    max-width: 70%;
+  }
+
+  @at-root .intro__cta {
+    @include mix.flexRow(center, center);
+    column-gap: rem(30);
+  }
 }
