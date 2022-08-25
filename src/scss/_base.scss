@@ -35,3 +35,7 @@ h3 {
   font-size: map-get($map: var.$font-sizes, $key: h3);
   font-weight: map-get($map: var.$font-weights, $key: h3);
 }
+
+a:where(:link, :visited, :hover, :focus, :active) {
+  color: inherit;
+}
