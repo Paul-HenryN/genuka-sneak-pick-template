@@ -3,3 +3,4 @@
 - [SMACSS](http://smacss.com/book/state) folder structure
 - [Andy Bell's css reset](https://piccalil.li/blog/a-modern-css-reset/)
 - [Parcel](https://parceljs.org/)
+- [Fontawesome](https://fontawesome.com/)
