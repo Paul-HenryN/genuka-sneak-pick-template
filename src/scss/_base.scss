@@ -38,4 +38,5 @@ h3 {
 
 a:where(:link, :visited, :hover, :focus, :active) {
   color: map-get($map: var.$colors, $key: neutral-dark);
+  text-decoration: none;
 }

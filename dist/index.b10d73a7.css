@@ -78,6 +78,7 @@ h3 {
 
 a:where(:link, :visited, :hover, :focus, :active) {
   color: #000;
+  text-decoration: none;
 }
 
 .nav {
@@ -96,6 +97,11 @@ a:where(:link, :visited, :hover, :focus, :active) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  column-gap: 4vw;
+  display: none;
+}
+
+.nav__user {
   display: none;
 }
 
@@ -103,10 +109,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
   cursor: pointer;
   background: none;
   border: none;
-}
-
-.nav__btn-toggle {
-  display: none;
 }
 
 .nav__btn-cart {
@@ -136,6 +138,29 @@ a:where(:link, :visited, :hover, :focus, :active) {
   align-items: center;
   column-gap: 19px;
   display: flex;
+}
+
+.nav__link {
+  font-size: 1rem;
+}
+
+header {
+  padding-inline: 8%;
+  padding-top: 40px;
+}
+
+@media (min-width: 769px) {
+  .nav__menu {
+    display: flex;
+  }
+
+  .nav__btn-toggle {
+    display: none;
+  }
+
+  .nav__user {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

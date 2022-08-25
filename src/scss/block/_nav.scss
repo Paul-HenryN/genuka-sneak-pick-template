@@ -12,6 +12,11 @@
 
   &__menu {
     @include mix.flexRow(center, center);
+    column-gap: 4vw;
+    display: none;
+  }
+
+  &__user {
     display: none;
   }
 
@@ -19,10 +24,6 @@
     border: none;
     background: none;
     cursor: pointer;
-
-    &-toggle {
-      display: none;
-    }
 
     &-cart {
       position: relative;
@@ -54,5 +55,9 @@
   &__right {
     @include mix.flexRow(center, center);
     column-gap: 19px;
+  }
+
+  &__link {
+    font-size: map-get($map: var.$font-sizes, $key: small);
   }
 }

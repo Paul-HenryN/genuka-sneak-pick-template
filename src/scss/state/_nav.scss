@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as mix;
+
+.nav {
+  @include mix.mq(tabletPortrait) {
+    &__menu {
+      display: flex;
+    }
+
+    &__btn-toggle {
+      display: none;
+    }
+
+    &__user {
+      display: block;
+    }
+  }
+}
