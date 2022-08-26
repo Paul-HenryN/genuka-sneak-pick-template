@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
+
 header,
 #intro {
   padding-inline: 8%;

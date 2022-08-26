@@ -19,17 +19,14 @@ header {
     column-gap: 7%;
     padding-inline: 10%;
 
-    $offset: 50px;
+    $offset: 0px;
 
     @at-root .intro__hero {
-      position: relative;
-      bottom: $offset;
-
+      margin-bottom: 200px;
       flex: 2;
     }
     @at-root .intro__text {
-      position: relative;
-      top: $offset;
+      margin-top: $offset;
 
       flex: 1;
       align-items: flex-start;
@@ -39,10 +36,10 @@ header {
       }
     }
     @at-root .intro__sneaker {
-      width: clamp(rem(340), 150%, rem(870));
+      width: clamp(rem(340), 150%, rem(650));
     }
     @at-root .intro__circle {
-      width: clamp(rem(245), 100%, rem(625));
+      width: clamp(rem(245), 100%, rem(450));
     }
   }
 }

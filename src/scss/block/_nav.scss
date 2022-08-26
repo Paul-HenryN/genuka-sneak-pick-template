@@ -33,7 +33,7 @@
 
         display: block;
         width: 16px;
-        aspect-ratio: 1;
+        height: 16px;
 
         font-family: map-get($map: var.$font-families, $key: primary);
         font-size: rem(10);

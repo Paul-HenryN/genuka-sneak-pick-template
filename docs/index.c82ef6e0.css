@@ -124,7 +124,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
 .nav__btn-cart:after {
   content: attr(data-count);
   width: 16px;
-  aspect-ratio: 1;
+  height: 16px;
   text-align: center;
   color: #000;
   background-color: #fcfcfc;
@@ -201,6 +201,10 @@ body {
   text-align: center;
 }
 
+main {
+  overflow: hidden;
+}
+
 header, #intro {
   padding-inline: 8%;
 }
@@ -258,7 +262,7 @@ header {
   display: flex;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .nav__menu {
     display: flex;
   }
@@ -297,15 +301,13 @@ header {
 
   .intro__hero {
     flex: 2;
-    position: relative;
-    bottom: 50px;
+    margin-bottom: 200px;
   }
 
   .intro__text {
     flex: 1;
     align-items: flex-start;
-    position: relative;
-    top: 50px;
+    margin-top: 0;
   }
 
   .intro__text p {
@@ -313,11 +315,11 @@ header {
   }
 
   .intro__sneaker {
-    width: clamp(21.25rem, 150%, 54.375rem);
+    width: clamp(21.25rem, 150%, 40.625rem);
   }
 
   .intro__circle {
-    width: clamp(15.3125rem, 100%, 39.0625rem);
+    width: clamp(15.3125rem, 100%, 28.125rem);
   }
 }
 

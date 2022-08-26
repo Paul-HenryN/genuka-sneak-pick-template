@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as mix;
 
 .nav {
-  @include mix.mq(tabletPortrait) {
+  @include mix.mq(tabletLandscape) {
     &__menu {
       display: flex;
     }
