@@ -57,11 +57,11 @@ body {
 }
 
 h1, h2, h3 {
+  text-transform: uppercase;
   font-family: Rubik, sans-serif;
 }
 
 h1 {
-  text-transform: uppercase;
   color: #4682be;
   font-size: clamp(4rem, 10vw, 5rem);
   font-weight: 900;
@@ -74,6 +74,8 @@ h1:first-line {
 }
 
 h2 {
+  color: #fcfcfc;
+  -webkit-text-stroke: 1px #000;
   font-size: 2.25rem;
   font-weight: 800;
 }
@@ -111,12 +113,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
   display: none;
 }
 
-.nav__btn {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
 .nav__btn-cart {
   position: relative;
 }
@@ -146,7 +142,10 @@ a:where(:link, :visited, :hover, :focus, :active) {
   display: flex;
 }
 
-.btn:where(:link, :visited, :hover, :focus, :active) {
+.btn, .btn:where(:link, :visited, :hover, :focus, :active) {
+  cursor: pointer;
+  background: none;
+  border: none;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -195,6 +194,93 @@ a:where(:link, :visited, :hover, :focus, :active) {
   margin-left: .625rem;
   transition: transform .3s;
   display: inline-block;
+}
+
+.btn_control {
+  height: 3.8125rem;
+  width: 3.8125rem;
+  border: 1px solid;
+  border-radius: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+}
+
+.btn_control:before {
+  content: url("arrow-control.0c8f5709.svg");
+}
+
+.btn_control_right:before {
+  transform: scaleX(-1);
+}
+
+.btn_more {
+  color: #fcfcfc;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #4682be;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  width: clamp(15.9375rem, 70%, 22.3125rem);
+  border: 2px solid;
+  border-radius: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+}
+
+.card__body {
+  background-color: #fcfcfc;
+  border-top: 2px solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5em;
+  display: flex;
+  position: relative;
+}
+
+.card__btn {
+  position: absolute;
+  top: -25%;
+  right: 10%;
+}
+
+.carousel {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.carousel__items {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.carousel__btn {
+  position: absolute;
+}
+
+.carousel__btn_left {
+  left: 0;
+}
+
+.carousel__btn_right {
+  right: 0;
 }
 
 body {
@@ -282,6 +368,10 @@ header {
 
 .btn_arrow:hover:after {
   transform: scaleX(1.1)translateX(4px);
+}
+
+.btn_control:hover {
+  background-color: #4682be;
 }
 
 @media (min-width: 1024px) {

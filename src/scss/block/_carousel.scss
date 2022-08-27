@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as mix;
+
+.carousel {
+  position: relative;
+  @include mix.flexRow(center, center);
+
+  &__items {
+    @include mix.flexRow(center, center);
+  }
+
+  &__btn {
+    position: absolute;
+
+    &_left {
+      left: 0;
+    }
+
+    &_right {
+      right: 0;
+    }
+  }
+}

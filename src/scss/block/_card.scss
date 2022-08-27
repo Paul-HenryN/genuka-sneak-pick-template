@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as *;
+@use "../abstracts/mixins" as mix;
+
+.card {
+  overflow: hidden;
+
+  @include mix.flexCol(stretch, center);
+  width: clamp(rem(255), 70%, rem(357));
+
+  border: 2px solid currentColor;
+  border-radius: rem(20);
+
+  &__body {
+    position: relative;
+    background-color: map-get($map: var.$colors, $key: neutral-light);
+    border-top: 2px solid currentColor;
+
+    @include mix.flexCol(flex-start, center);
+    padding: 1.5em;
+  }
+
+  &__btn {
+    position: absolute;
+    top: -25%;
+    right: 10%;
+  }
+}

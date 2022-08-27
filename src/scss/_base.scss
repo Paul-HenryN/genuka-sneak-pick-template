@@ -20,13 +20,13 @@ h1,
 h2,
 h3 {
   font-family: map-get($map: var.$font-families, $key: primary);
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: map-get($map: var.$font-sizes, $key: h1);
   font-weight: map-get($map: var.$font-weights, $key: h1);
   line-height: 0.8;
-  text-transform: uppercase;
   color: map-get($map: var.$colors, $key: accent);
 
   &::first-line {
@@ -37,6 +37,8 @@ h1 {
 h2 {
   font-size: map-get($map: var.$font-sizes, $key: h2);
   font-weight: map-get($map: var.$font-weights, $key: h2);
+  color: map-get($map: var.$colors, $key: neutral-light);
+  -webkit-text-stroke: 1px map-get($map: var.$colors, $key: neutral-dark);
 }
 h3 {
   font-size: map-get($map: var.$font-sizes, $key: h3);
