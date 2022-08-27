@@ -76,7 +76,7 @@ h1:first-line {
 h2 {
   color: #fcfcfc;
   -webkit-text-stroke: 1px #000;
-  font-size: 2.25rem;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 800;
 }
 
@@ -300,12 +300,17 @@ header {
   padding-top: 40px;
 }
 
-#intro {
+section {
+  align-items: strecth;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  row-gap: 3.125rem;
+  row-gap: 2.1875rem;
+  margin-bottom: 9.375rem;
   display: flex;
+}
+
+#intro {
+  row-gap: 3.125rem;
   position: relative;
 }
 
@@ -346,6 +351,11 @@ header {
   column-gap: 1.875rem;
   margin-top: 1.25rem;
   display: flex;
+}
+
+.new-arrivals__carousel-container {
+  background-color: #fa7f3d;
+  padding-block: 1.875rem;
 }
 
 @media (min-width: 1024px) {
