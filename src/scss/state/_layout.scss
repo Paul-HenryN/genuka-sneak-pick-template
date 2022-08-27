@@ -19,15 +19,10 @@ header {
     column-gap: 7%;
     padding-inline: 10%;
 
-    $offset: 0px;
-
     @at-root .intro__hero {
-      margin-bottom: 200px;
       flex: 2;
     }
     @at-root .intro__text {
-      margin-top: $offset;
-
       flex: 1;
       align-items: flex-start;
 
@@ -40,6 +35,19 @@ header {
     }
     @at-root .intro__circle {
       width: clamp(rem(245), 100%, rem(450));
+    }
+
+    @media screen and (min-height: 750px) {
+      @at-root .intro__sneaker {
+        width: clamp(rem(340), 150%, rem(870));
+      }
+      @at-root .intro__circle {
+        width: clamp(rem(245), 100%, rem(625));
+      }
+
+      @at-root .intro__text {
+        margin-top: 200px;
+      }
     }
   }
 }

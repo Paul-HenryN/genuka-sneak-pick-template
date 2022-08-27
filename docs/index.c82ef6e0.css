@@ -301,13 +301,11 @@ header {
 
   .intro__hero {
     flex: 2;
-    margin-bottom: 200px;
   }
 
   .intro__text {
     flex: 1;
     align-items: flex-start;
-    margin-top: 0;
   }
 
   .intro__text p {
@@ -320,6 +318,20 @@ header {
 
   .intro__circle {
     width: clamp(15.3125rem, 100%, 28.125rem);
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 750px) {
+  .intro__sneaker {
+    width: clamp(21.25rem, 150%, 54.375rem);
+  }
+
+  .intro__circle {
+    width: clamp(15.3125rem, 100%, 39.0625rem);
+  }
+
+  .intro__text {
+    margin-top: 200px;
   }
 }
 
