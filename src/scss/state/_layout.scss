@@ -37,7 +37,7 @@ header {
       width: clamp(rem(245), 100%, rem(450));
     }
 
-    @media screen and (min-height: 750px) {
+    @media screen and (min-height: 800px) {
       @at-root .intro__sneaker {
         width: clamp(rem(340), 150%, rem(870));
       }

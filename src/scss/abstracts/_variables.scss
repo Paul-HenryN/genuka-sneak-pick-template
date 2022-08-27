@@ -26,10 +26,10 @@ $font-families: (
   ),
 );
 $font-sizes: (
-  h1: clamp(rem(64), 10vw, rem(100)),
+  h1: clamp(rem(64), 10vw, rem(80)),
   h2: rem(36),
   h3: rem(24),
-  neutral: clamp(rem(16), 3vw, rem(20)),
+  neutral: clamp(rem(12), 3vw, rem(16)),
   small: rem(16),
 );
 $font-weights: (
