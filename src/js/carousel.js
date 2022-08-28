@@ -6,5 +6,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     variableHeight: true,
     variableWidth: true,
+    lazyLoad: "progressive",
   });
 });

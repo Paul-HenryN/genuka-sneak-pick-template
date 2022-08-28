@@ -5,7 +5,8 @@ $(document).ready(function() {
         infinite: true,
         slidesToScroll: 1,
         variableHeight: true,
-        variableWidth: true
+        variableWidth: true,
+        lazyLoad: "progressive"
     });
 });
 

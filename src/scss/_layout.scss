@@ -69,4 +69,10 @@ section {
     padding-block: rem(30);
     background-color: map-get($map: var.$colors, $key: primary-light);
   }
+
+  @at-root .new-arrivals__carousel {
+    .carousel__items {
+      width: 80%;
+    }
+  }
 }
