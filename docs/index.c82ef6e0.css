@@ -299,7 +299,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .slick-slider {
-  box-sizing: border-box;
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
@@ -308,7 +307,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
   margin-inline: auto;
-  display: block;
   position: relative;
 }
 
