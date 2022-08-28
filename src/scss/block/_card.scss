@@ -6,8 +6,6 @@
   overflow: hidden;
 
   @include mix.flexCol(stretch, center);
-  width: clamp(rem(255), 70%, rem(357));
-
   border: 2px solid currentColor;
   border-radius: rem(20);
 

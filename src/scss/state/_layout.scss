@@ -13,6 +13,13 @@ header {
   }
 }
 
+section {
+  @include mix.mq(tabletLandscape) {
+    column-gap: rem(85);
+    margin-bottom: rem(165);
+  }
+}
+
 #intro {
   @include mix.mq(tabletLandscape) {
     flex-direction: row-reverse;
@@ -48,6 +55,22 @@ header {
       @at-root .intro__text {
         margin-top: 200px;
       }
+    }
+  }
+}
+
+#new-arrivals {
+  @include mix.mq(tabletLandscape) {
+    @at-root .new-arrivals__carousel-container {
+      width: 100%;
+      padding-block: rem(150);
+    }
+
+    @at-root .new-arrivals__carousel {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }

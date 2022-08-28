@@ -21,7 +21,7 @@ header {
 }
 
 section {
-  @include mix.flexCol(strecth, space-between);
+  @include mix.flexCol(center, space-between);
   row-gap: rem(35);
   margin-bottom: rem(150);
 }
@@ -64,6 +64,8 @@ section {
 
 #new-arrivals {
   @at-root .new-arrivals__carousel-container {
+    position: relative;
+    width: 100%;
     padding-block: rem(30);
     background-color: map-get($map: var.$colors, $key: primary-light);
   }

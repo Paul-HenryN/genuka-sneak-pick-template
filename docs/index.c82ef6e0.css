@@ -76,6 +76,7 @@ h1:first-line {
 h2 {
   color: #fcfcfc;
   -webkit-text-stroke: 1px #000;
+  margin-bottom: 3.125rem;
   font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 800;
 }
@@ -229,7 +230,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .card {
-  width: clamp(15.9375rem, 70%, 22.3125rem);
   border: 2px solid;
   border-radius: 1.25rem;
   flex-direction: column;
@@ -257,22 +257,13 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .carousel {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   position: relative;
 }
 
-.carousel__items {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 .carousel__btn {
+  z-index: 100;
   position: absolute;
+  top: 40%;
 }
 
 .carousel__btn_left {
@@ -281,6 +272,106 @@ a:where(:link, :visited, :hover, :focus, :active) {
 
 .carousel__btn_right {
   right: 0;
+}
+
+.slick-slider {
+  box-sizing: border-box;
+  width: 85%;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  margin-inline: auto;
+  display: block;
+  position: relative;
+}
+
+.slick-list {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  column-gap: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  height: auto;
+  border: 1px solid #0000;
+  display: block;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
 }
 
 body {
@@ -301,9 +392,9 @@ header {
 }
 
 section {
-  align-items: strecth;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   row-gap: 2.1875rem;
   margin-bottom: 9.375rem;
   display: flex;
@@ -354,8 +445,10 @@ section {
 }
 
 .new-arrivals__carousel-container {
+  width: 100%;
   background-color: #fa7f3d;
   padding-block: 1.875rem;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -391,6 +484,11 @@ section {
 
   header {
     padding-inline: 10%;
+  }
+
+  section {
+    column-gap: 5.3125rem;
+    margin-bottom: 10.3125rem;
   }
 
   #intro {
@@ -432,6 +530,20 @@ section {
 
   .intro__text {
     margin-top: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .new-arrivals__carousel-container {
+    width: 100%;
+    padding-block: 9.375rem;
+  }
+
+  .new-arrivals__carousel {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
