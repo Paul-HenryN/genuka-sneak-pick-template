@@ -3,6 +3,7 @@
 @use "../abstracts/mixins" as mix;
 
 .card {
+  position: relative;
   overflow: hidden;
 
   @include mix.flexCol(stretch, center);
@@ -22,5 +23,28 @@
     position: absolute;
     top: -25%;
     right: 10%;
+  }
+
+  &_overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to bottom, transparent, black);
+    }
+
+    border-radius: rem(10);
+
+    h3 {
+      color: map-get($map: var.$colors, $key: neutral-light);
+      border-radius: rem(10);
+    }
+  }
+
+  &_overlay &__body {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
   }
 }

@@ -236,6 +236,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
   justify-content: center;
   align-items: stretch;
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 
@@ -254,6 +255,29 @@ a:where(:link, :visited, :hover, :focus, :active) {
   position: absolute;
   top: -25%;
   right: 10%;
+}
+
+.card_overlay {
+  border-radius: .625rem;
+}
+
+.card_overlay:before {
+  content: "";
+  background-image: linear-gradient(#0000, #000);
+  position: absolute;
+  inset: 0;
+}
+
+.card_overlay h3 {
+  color: #fcfcfc;
+  border-radius: .625rem;
+}
+
+.card_overlay .card__body {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 0;
 }
 
 .carousel {
