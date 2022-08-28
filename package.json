@@ -2,11 +2,11 @@
   "name": "genuka-sneak-pick-template",
   "version": "1.0.0",
   "description": "A [Genuka](https://www.genuka.com/) sneaker store template.",
-  "main": "index.js",
+  "main": "main.js",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --dist-dir docs",
-    "build": "parcel build --public-url ./"
+    "start": "parcel --dist-dir docs --public-url ./",
+    "build": "parcel build --public-url ./ --dist-dir docs"
   },
   "keywords": [],
   "author": "",
