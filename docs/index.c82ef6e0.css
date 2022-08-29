@@ -298,6 +298,10 @@ a:where(:link, :visited, :hover, :focus, :active) {
   right: 0;
 }
 
+.carousel__card {
+  opacity: 0;
+}
+
 .slick-slider {
   -webkit-user-select: none;
   user-select: none;
