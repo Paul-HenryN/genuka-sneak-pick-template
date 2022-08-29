@@ -235,6 +235,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  transition: all .5s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -247,6 +248,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
   justify-content: center;
   align-items: flex-start;
   padding: 1.5em;
+  transition: inherit;
   display: flex;
   position: relative;
 }
@@ -257,13 +259,19 @@ a:where(:link, :visited, :hover, :focus, :active) {
   right: 10%;
 }
 
+.card__img {
+  transition: inherit;
+}
+
 .card_overlay {
   border-radius: .3125rem;
 }
 
 .card_overlay:before {
   content: "";
+  z-index: 100;
   background-image: linear-gradient(#0000, #000);
+  transition: inherit;
   position: absolute;
   inset: 0;
 }
@@ -273,9 +281,16 @@ a:where(:link, :visited, :hover, :focus, :active) {
   border-radius: .625rem;
 }
 
+.card_overlay p {
+  display: none;
+}
+
 .card_overlay .card__body {
+  z-index: 500;
+  text-align: start;
   background: none;
   border: none;
+  row-gap: 2em;
   position: absolute;
   bottom: 10%;
 }
@@ -595,6 +610,23 @@ section {
   .new-arrivals__carousel .carousel__items {
     width: 85%;
   }
+}
+
+.card:hover .card__img {
+  transform: scale(1.1);
+}
+
+.card_overlay:hover .card__body {
+  transform: translateY(-50%);
+}
+
+.card_overlay:hover p {
+  display: block;
+}
+
+.card_overlay:hover:before {
+  background-color: #fa7f3d;
+  background-image: none;
 }
 
 /*# sourceMappingURL=index.c82ef6e0.css.map */

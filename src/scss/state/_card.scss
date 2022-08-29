@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as var;
+
+.card {
+  &:hover .card__img {
+    transform: scale(1.1);
+  }
+
+  &_overlay:hover {
+    .card__body {
+      transform: translateY(-50%);
+    }
+
+    p {
+      display: block;
+    }
+
+    &::before {
+      background-color: map-get($map: var.$colors, $key: primary-light);
+      background-image: none;
+    }
+  }
+}
