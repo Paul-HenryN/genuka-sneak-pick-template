@@ -72,13 +72,21 @@ section {
 
   @at-root .new-arrivals__carousel {
     .carousel__items {
-      width: 80%;
+      width: 90%;
     }
+  }
+
+  .slick-track {
+    column-gap: 2em;
   }
 }
 
 #brands {
   @at-root .brands__carousel {
     width: 100%;
+  }
+
+  .slick-track {
+    column-gap: 0.5em;
   }
 }

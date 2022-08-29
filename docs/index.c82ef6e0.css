@@ -258,7 +258,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .card_overlay {
-  border-radius: .625rem;
+  border-radius: .3125rem;
 }
 
 .card_overlay:before {
@@ -277,7 +277,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
   background: none;
   border: none;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
 }
 
 .carousel {
@@ -336,7 +336,6 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .slick-track {
-  column-gap: 2em;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -477,11 +476,19 @@ section {
 }
 
 .new-arrivals__carousel .carousel__items {
-  width: 80%;
+  width: 90%;
+}
+
+#new-arrivals .slick-track {
+  column-gap: 2em;
 }
 
 .brands__carousel {
   width: 100%;
+}
+
+#brands .slick-track {
+  column-gap: .5em;
 }
 
 @media (min-width: 1024px) {

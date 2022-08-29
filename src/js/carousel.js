@@ -32,18 +32,18 @@ $(document).ready(function () {
   new ScrollMagic.Scene({
     triggerElement: "#new-arrivals",
     triggerHook: "#OnEnter",
-    offset: -50, // start this scene after scrolling for 50px
+    offset: -50,
   })
-    .addTo(controller) // assign the scene to the controller
-    .addIndicators()
-    .setClassToggle("#new-arrivals .carousel__card", "animate__fadeInUp");
+    .addTo(controller)
+    .setClassToggle("#new-arrivals .carousel__card", "animate__fadeInUp")
+    .reverse(false);
 
   new ScrollMagic.Scene({
     triggerElement: "#brands",
     triggerHook: "#OnEnter",
-    offset: -50, // start this scene after scrolling for 50px
+    offset: -50,
   })
-    .addTo(controller) // assign the scene to the controller
-    .addIndicators()
-    .setClassToggle("#brands .carousel__card", "animate__fadeInUp");
+    .addTo(controller)
+    .setClassToggle("#brands .carousel__card", "animate__fadeInUp")
+    .reverse(false);
 });
