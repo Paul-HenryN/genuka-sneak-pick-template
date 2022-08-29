@@ -76,3 +76,9 @@ section {
     }
   }
 }
+
+#brands {
+  @at-root .brands__carousel {
+    width: 100%;
+  }
+}

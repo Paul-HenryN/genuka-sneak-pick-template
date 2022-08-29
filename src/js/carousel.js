@@ -1,11 +1,18 @@
 $(document).ready(function () {
-  $(".carousel__items").slick({
-    prevArrow: $(".carousel__btn_left"),
-    nextArrow: $(".carousel__btn_right"),
+  $(".new-arrivals__carousel")
+    .children(".carousel__items")
+    .slick({
+      prevArrow: $(".carousel__btn_left"),
+      nextArrow: $(".carousel__btn_right"),
+      infinite: true,
+      slidesToScroll: 1,
+      variableHeight: true,
+      variableWidth: true,
+    });
+
+  $(".brands__carousel").children(".carousel__items").slick({
+    arrows: false,
     infinite: true,
-    slidesToScroll: 1,
-    variableHeight: true,
     variableWidth: true,
-    lazyLoad: "progressive",
   });
 });

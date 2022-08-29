@@ -476,6 +476,10 @@ section {
   width: 80%;
 }
 
+.brands__carousel {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   .nav__menu {
     display: flex;
