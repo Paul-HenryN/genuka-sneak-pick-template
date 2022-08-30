@@ -6,15 +6,7 @@ $(document).ready(function () {
       nextArrow: $(".carousel__btn_right"),
       infinite: true,
       slidesToScroll: 1,
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+      variableWidth: true,
     });
 
   $(".brands__carousel").children(".carousel__items").slick({
@@ -29,7 +21,7 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     fade: true,
   });
 
