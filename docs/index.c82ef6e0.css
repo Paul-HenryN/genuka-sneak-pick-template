@@ -56,6 +56,11 @@ body {
   font-weight: 300;
 }
 
+footer {
+  color: #fcfcfc;
+  background-color: #000;
+}
+
 h1, h2, h3 {
   text-transform: uppercase;
   font-family: Rubik, sans-serif;
@@ -82,7 +87,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 4vw, 2.25rem);
   font-weight: 700;
 }
 
@@ -444,22 +449,29 @@ section {
   position: relative;
 }
 
-.intro__hero {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
 .intro__circle {
   width: clamp(15.3125rem, 70%, 39.0625rem);
 }
 
-.intro__sneaker {
-  max-width: none;
-  width: clamp(21.25rem, 100%, 54.375rem);
+.intro__carousel {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+}
+
+.intro__carousel .carousel__items {
+  width: 80%;
+  z-index: 1000;
   position: absolute;
+  top: 4%;
+}
+
+.intro__sneaker {
+  max-width: 45.3125rem;
+  width: clamp(21.25rem, 60vw, 45.3125rem);
 }
 
 .intro__text {
@@ -504,6 +516,10 @@ section {
 
 #brands .slick-track {
   column-gap: .5em;
+}
+
+footer {
+  text-align: start;
 }
 
 @media (min-width: 1024px) {
@@ -570,24 +586,12 @@ section {
     max-width: 100%;
   }
 
-  .intro__sneaker {
-    width: clamp(21.25rem, 150%, 40.625rem);
-  }
-
   .intro__circle {
     width: clamp(15.3125rem, 100%, 28.125rem);
   }
 }
 
 @media screen and (min-width: 1024px) and (min-height: 800px) {
-  .intro__sneaker {
-    width: clamp(21.25rem, 150%, 54.375rem);
-  }
-
-  .intro__circle {
-    width: clamp(15.3125rem, 100%, 39.0625rem);
-  }
-
   .intro__text {
     margin-top: 200px;
   }

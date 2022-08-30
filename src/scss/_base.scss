@@ -16,6 +16,10 @@ body {
 
   color: map-get($map: var.$colors, $key: neutral-dark);
 }
+footer {
+  background-color: map-get($map: var.$colors, $key: neutral-dark);
+  color: map-get($map: var.$colors, $key: neutral-light);
+}
 
 h1,
 h2,

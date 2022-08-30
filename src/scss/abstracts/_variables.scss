@@ -28,7 +28,7 @@ $font-families: (
 $font-sizes: (
   h1: clamp(rem(64), 10vw, rem(80)),
   h2: clamp(rem(24), 5vw, rem(36)),
-  h3: rem(24),
+  h3: clamp(rem(20), 4vw, rem(36)),
   neutral: clamp(rem(12), 3vw, rem(16)),
   small: rem(16),
 );

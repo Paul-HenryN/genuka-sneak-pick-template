@@ -4,14 +4,29 @@ $(document).ready(function() {
         nextArrow: $(".carousel__btn_right"),
         infinite: true,
         slidesToScroll: 1,
-        variableHeight: true,
-        variableWidth: true
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            }, 
+        ]
     });
     $(".brands__carousel").children(".carousel__items").slick({
         arrows: false,
         infinite: true,
         variableWidth: true,
         variableHeight: true
+    });
+    $(".intro__carousel").children(".carousel__items").slick({
+        draggable: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true
     });
     const carouselCards = $(".carousel__card");
     for (const card of carouselCards){

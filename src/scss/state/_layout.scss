@@ -42,21 +42,12 @@ section {
         max-width: 100%;
       }
     }
-    @at-root .intro__sneaker {
-      width: clamp(rem(340), 150%, rem(650));
-    }
+
     @at-root .intro__circle {
       width: clamp(rem(245), 100%, rem(450));
     }
 
     @media screen and (min-height: 800px) {
-      @at-root .intro__sneaker {
-        width: clamp(rem(340), 150%, rem(870));
-      }
-      @at-root .intro__circle {
-        width: clamp(rem(245), 100%, rem(625));
-      }
-
       @at-root .intro__text {
         margin-top: 200px;
       }
