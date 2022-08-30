@@ -50,7 +50,7 @@ input, button, textarea, select {
 body {
   color: #000;
   background-color: #fefff5;
-  background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.28527be0.png");
+  background-image: linear-gradient(#fbf4f400, #fbf4f4), url("bg-pattern.0e33dc10.png");
   font-family: Poppins, sans-serif;
   font-size: clamp(.75rem, 3vw, 1rem);
   font-weight: 300;
@@ -195,7 +195,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .btn_arrow:after {
-  content: url("arrow.4f3cd5aa.svg");
+  content: url("arrow.6d9f66a1.svg");
   transform-origin: 0;
   margin-left: .625rem;
   transition: transform .3s;
@@ -215,7 +215,7 @@ a:where(:link, :visited, :hover, :focus, :active) {
 }
 
 .btn_control:before {
-  content: url("arrow-control.0c8f5709.svg");
+  content: url("arrow-control.fd300a6a.svg");
 }
 
 .btn_control_right:before {
@@ -634,4 +634,4 @@ footer {
   background-image: none;
 }
 
-/*# sourceMappingURL=index.c82ef6e0.css.map */
+/*# sourceMappingURL=index.b10d73a7.css.map */

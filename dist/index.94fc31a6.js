@@ -40,4 +40,4 @@ $(document).ready(function() {
     }).addTo(controller).setClassToggle("#brands .carousel__card", "animate__fadeInUp").reverse(false);
 });
 
-//# sourceMappingURL=index.279906cf.js.map
+//# sourceMappingURL=index.94fc31a6.js.map

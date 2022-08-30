@@ -1,0 +1,2 @@
+const introText=document.querySelector(".intro__text"),introCircle=document.querySelector(".intro__circle"),introSneakers=document.querySelector(".carousel__items"),introTextAnimations=["animate__animated","animate__fadeInUp"],introCircleAnimations=["animate__animated","animate__fadeIn","animate__zoomIn"],introSneakersAnimations=["animate__animated","animate__fadeInRight"];introText.classList.add(...introTextAnimations),introCircle.classList.add(...introCircleAnimations),introSneakers.classList.add(...introSneakersAnimations);
+//# sourceMappingURL=index.1b03f727.js.map

@@ -5,4 +5,4 @@ const navAnimations = [
 ];
 nav.classList.add(...navAnimations);
 
-//# sourceMappingURL=index.14ebdbb6.js.map
+//# sourceMappingURL=index.6895c56f.js.map
