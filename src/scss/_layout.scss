@@ -99,11 +99,13 @@ section {
 }
 
 footer {
-  @include mix.flexCol(flex-start, center);
-  row-gap: rem(30);
+  .footer__content {
+    @include mix.flexCol(flex-start, space-between);
+    row-gap: rem(30);
+  }
 
   text-align: start;
-  padding: 2em 8%;
+  padding: 4em 8%;
 
   @at-root .footer__section {
     @include mix.flexCol(flex-start, center);

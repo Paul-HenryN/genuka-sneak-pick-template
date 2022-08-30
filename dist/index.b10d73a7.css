@@ -539,11 +539,14 @@ section {
 
 footer {
   text-align: start;
+  padding: 4em 8%;
+}
+
+footer .footer__content {
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   row-gap: 1.875rem;
-  padding: 2em 8%;
   display: flex;
 }
 
@@ -670,12 +673,22 @@ footer .copy {
   }
 }
 
+@media (min-width: 769px) {
+  footer .footer__content {
+    flex-direction: row;
+  }
+
+  footer .footer__section {
+    max-width: 30%;
+  }
+}
+
 .card:hover .card__img {
   transform: scale(1.1);
 }
 
 .card_overlay:hover .card__body {
-  transform: translateY(-50%);
+  transform: translateY(-25%);
 }
 
 .card_overlay:hover p {

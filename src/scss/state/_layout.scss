@@ -75,3 +75,15 @@ section {
     }
   }
 }
+
+footer {
+  @include mix.mq(tabletPortrait) {
+    .footer__content {
+      flex-direction: row;
+    }
+
+    .footer__section {
+      max-width: 30%;
+    }
+  }
+}
