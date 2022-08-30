@@ -58,7 +58,7 @@
 
         <ul class="nav__menu">
           <li class="nav__menu-item">
-            <a href="#" class="btn btn_link">New arrivals</a>
+            <a href="#new-arrivals" class="btn btn_link">New arrivals</a>
           </li>
           <li class="nav__menu-item">
             <a href="#" class="btn btn_link">Products</a>
@@ -113,6 +113,11 @@
             />
             <img
               src="../images/hero/new-balance-1.png"
+              class="intro__sneaker carousel__item"
+              alt=""
+            />
+            <img
+              src="../images/hero/new-balance-2.png"
               class="intro__sneaker carousel__item"
               alt=""
             />
@@ -325,9 +330,49 @@
     </main>
 
     <footer>
-      <section>
+      <div class="footer__section">
         <h3>Important links</h3>
-      </section>
+
+        <ul>
+          <li><a href="#">Refunds/Cancellation</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3>Follow</h3>
+
+        <ul class="footer__social">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3>Newsletter</h3>
+        <p>Receive the latest news by joining our mailing list.</p>
+        <form method="post" class="footer__form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+
+          <button type="submit" class="btn btn_primary">Subscribe</button>
+        </form>
+      </div>
+
+      <p class="copy">© Sneak pick 2022</p>
     </footer>
   </body>
 </html>
