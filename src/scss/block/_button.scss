@@ -35,7 +35,7 @@
 
     color: map-get($map: var.$colors, $key: primary-dark);
     border: 2px solid map-get($map: var.$colors, $key: primary-dark);
-    border-radius: rem(10);
+    // border-radius: rem(10);
 
     font-family: map-get($map: var.$font-families, $key: primary);
     font-size: map-get($map: var.$font-sizes, $key: neutral);

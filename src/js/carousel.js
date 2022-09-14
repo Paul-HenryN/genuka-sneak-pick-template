@@ -9,6 +9,13 @@ $(document).ready(function () {
       variableWidth: true,
     });
 
+  $(".see-also__carousel").children(".carousel__items").slick({
+    arrows: false,
+    infinite: true,
+    variableWidth: true,
+    variableHeight: true,
+  });
+
   $(".brands__carousel").children(".carousel__items").slick({
     arrows: false,
     infinite: true,

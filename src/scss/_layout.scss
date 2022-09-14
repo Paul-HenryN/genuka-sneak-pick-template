@@ -88,6 +88,16 @@ section {
   }
 }
 
+#see-also {
+  @at-root .see-also__carousel {
+    width: 100%;
+  }
+
+  .slick-track {
+    column-gap: 0.5em;
+  }
+}
+
 #brands {
   @at-root .brands__carousel {
     width: 100%;
@@ -109,7 +119,7 @@ footer {
 
   @at-root .footer__section {
     @include mix.flexCol(flex-start, center);
-    row-gap: 0.5em;
+    row-gap: 1em;
     max-width: 45%;
   }
 
@@ -120,7 +130,7 @@ footer {
 
   @at-root .footer__form {
     @include mix.flexCol(flex-start, center);
-    row-gap: rem(5);
+    row-gap: rem(20);
   }
 
   .copy {

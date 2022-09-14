@@ -193,7 +193,6 @@ a:where(:link, :visited, :focus, :active) {
 .btn_primary {
   color: #5b2406;
   border: 2px solid #5b2406;
-  border-radius: .625rem;
   padding: .9em 1.5em;
   font-family: Rubik, sans-serif;
   font-size: clamp(.75rem, 3vw, 1rem);
@@ -255,7 +254,6 @@ a:where(:link, :visited, :focus, :active) {
 
 .card {
   border: 2px solid;
-  border-radius: 1.25rem;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
@@ -285,10 +283,6 @@ a:where(:link, :visited, :focus, :active) {
 
 .card__img {
   transition: inherit;
-}
-
-.card_overlay {
-  border-radius: .3125rem;
 }
 
 .card_overlay:before {
@@ -335,10 +329,6 @@ a:where(:link, :visited, :focus, :active) {
 
 .carousel__btn_right {
   right: 0;
-}
-
-.carousel__card {
-  opacity: 0;
 }
 
 .slick-slider {
@@ -529,6 +519,14 @@ section {
   column-gap: 2em;
 }
 
+.see-also__carousel {
+  width: 100%;
+}
+
+#see-also .slick-track {
+  column-gap: .5em;
+}
+
 .brands__carousel {
   width: 100%;
 }
@@ -555,7 +553,7 @@ footer .footer__content {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  row-gap: .5em;
+  row-gap: 1em;
   display: flex;
 }
 
@@ -571,7 +569,7 @@ footer .footer__content {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  row-gap: .3125rem;
+  row-gap: 1.25rem;
   display: flex;
 }
 
