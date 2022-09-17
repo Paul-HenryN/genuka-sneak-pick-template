@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as *;
+
+.sidebar {
+  background-color: black;
+  color: map-get($map: var.$colors, $key: neutral-light);
+
+  @include mix.flexCol(flex-start, flex-start);
+  row-gap: 2em;
+  padding: rem(100) 8%;
+  text-align: start;
+
+  .menu,
+  .submenu {
+    @include mix.flexCol(flex-start, flex-start);
+  }
+
+  .menu {
+    row-gap: 2em;
+  }
+  .submenu_lvl_1 {
+    row-gap: 1.5em;
+    margin-left: rem(10);
+  }
+  .submenu {
+    display: none;
+  }
+
+  @at-root &__close-btn {
+    align-self: flex-end;
+  }
+}

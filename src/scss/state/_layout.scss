@@ -77,7 +77,7 @@ section {
 }
 
 footer {
-  @include mix.mq(tabletPortrait) {
+  @include mix.mq(tabletLandscape) {
     .footer__content {
       flex-direction: row;
     }

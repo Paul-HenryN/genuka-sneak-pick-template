@@ -61,4 +61,13 @@ $(document).ready(function () {
     .addTo(controller)
     .setClassToggle("#brands .carousel__card", "animate__fadeInUp")
     .reverse(false);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#see-also",
+    triggerHook: "#OnEnter",
+    offset: -50,
+  })
+    .addTo(controller)
+    .setClassToggle("#see-also .carousel__card", "animate__fadeInUp")
+    .reverse(false);
 });

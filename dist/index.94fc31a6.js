@@ -44,6 +44,11 @@ $(document).ready(function() {
         triggerHook: "#OnEnter",
         offset: -50
     }).addTo(controller).setClassToggle("#brands .carousel__card", "animate__fadeInUp").reverse(false);
+    new ScrollMagic.Scene({
+        triggerElement: "#see-also",
+        triggerHook: "#OnEnter",
+        offset: -50
+    }).addTo(controller).setClassToggle("#see-also .carousel__card", "animate__fadeInUp").reverse(false);
 });
 
 //# sourceMappingURL=index.94fc31a6.js.map

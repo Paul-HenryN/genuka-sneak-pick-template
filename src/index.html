@@ -26,6 +26,7 @@
       defer
     ></script>
     <script src="./js/carousel.js" defer></script>
+    <script src="./js/sidebar.js" defer></script>
     <script
       src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
       defer
@@ -80,6 +81,7 @@
         <div class="nav__right">
           <button class="btn nav__btn-toggle">
             <i class="fa-solid fa-bars"></i>
+            open
           </button>
 
           <a href="#" class="nav__user">
@@ -92,6 +94,55 @@
         </div>
       </nav>
     </header>
+
+    <aside class="sidebar">
+      <button class="btn sidebar__close-btn">
+        <i class="fa-solid fa-x">close</i>
+      </button>
+      <ul class="menu">
+        <li>
+          <a href="#" class="btn btn_link">New arrivals</a>
+        </li>
+        <li>
+          <button class="btn btn_toggle">Products</button>
+          <ul class="submenu submenu_lvl_1">
+            <li>
+              <button class="btn btn_toggle">Sneakers</button>
+              <ul class="submenu">
+                <li><a href="#" class="btn btn__link">Men</a></li>
+                <li><a href="#" class="btn btn__link">Women</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="btn btn_toggle">Apparel</button>
+              <ul class="submenu">
+                <li><a href="#" class="btn btn__link">Men</a></li>
+                <li><a href="#" class="btn btn__link">Women</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="btn btn_toggle">Accessories</button>
+              <ul class="submenu submenu_lvl_2">
+                <li><a href="#" class="btn btn__link">Men</a></li>
+                <li><a href="#" class="btn btn__link">Women</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="btn btn_toggle">Brands</button>
+              <ul class="submenu submenu_lvl_2">
+                <li><a href="#" class="btn btn__link">Nike</a></li>
+                <li><a href="#" class="btn btn__link">Adidas</a></li>
+                <li><a href="#" class="btn btn__link">Fila</a></li>
+                <li><a href="#" class="btn btn__link">New balance</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="btn btn_link">Contact</a>
+        </li>
+      </ul>
+    </aside>
 
     <main>
       <section id="intro">
