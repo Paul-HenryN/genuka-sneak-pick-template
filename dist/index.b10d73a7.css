@@ -252,7 +252,7 @@ a:where(:link, :visited, :focus, :active) {
 }
 
 .btn_toggle:after {
-  content: ">";
+  content: "+";
   margin-left: .625rem;
   display: inline-block;
 }

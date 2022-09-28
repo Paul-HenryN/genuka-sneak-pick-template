@@ -94,7 +94,7 @@
 
   &_toggle {
     &::after {
-      content: ">";
+      content: "+";
       display: inline-block;
       margin-left: rem(10);
     }
